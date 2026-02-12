@@ -4,6 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+.name{
+  color: #61dafb;
+  filter: drop-shadow(0 0 1em #61dafbd3);
+}
 
 .logo {
   height: 6em;
