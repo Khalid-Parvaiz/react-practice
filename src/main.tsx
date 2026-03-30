@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
     <Routes>
       <Route path="/react-practice" element={<App />} />
-      <Route path="/react-practice/counter" element={<Counter />} />
-      <Route path="/react-practice/todo-list" element={<TodoApp />} />
+      <Route path="/react-practice/counter/" element={<Counter />} />
+      <Route path="/react-practice/todo-list/" element={<TodoApp />} />
     </Routes>
   </BrowserRouter>
   </StrictMode>,
