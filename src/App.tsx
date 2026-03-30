@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './App.css'
 
 function App() {
@@ -5,8 +6,9 @@ function App() {
   return (
     <>
       <h2>Welcome To My App</h2>
-      <a href="/react-practice/counter/">Counter</a>
-      <a href="/react-practice/todo-list/">ToDo List</a>
+      <Link to={'/react-practice/counter'}>Counter</Link>
+      <Link to={'/react-practice/todo-list'}>Todo List</Link>
+      {/* <a href="./counter">counter</a> */}
 
     </>
   )

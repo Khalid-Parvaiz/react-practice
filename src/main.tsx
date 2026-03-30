@@ -8,12 +8,12 @@ import TodoApp from './components/to-do-list/index.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename=''>
     <Routes>
       <Route path="/react-practice" element={<App />} />
-      <Route path="/react-practice/counter/" element={<Counter />} />
-      <Route path="/react-practice/todo-list/" element={<TodoApp />} />
+      <Route path="/react-practice/counter" element={<Counter />} />
+      <Route path="/react-practice/todo-list" element={<TodoApp />} />
     </Routes>
   </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
