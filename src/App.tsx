@@ -8,7 +8,7 @@ function App() {
       <h2>Welcome To My App</h2>
       <Link to={'/react-practice/counter'}>Counter</Link>
       <Link to={'/react-practice/todo-list'}>Todo List</Link>
-      <Link to={'/react-practice/productStore'}>Store</Link>
+      <Link to={'/react-practice/productStore'}>Product Store</Link>
       {/* <a href="./counter">counter</a> */}
     </>
   )
