@@ -1,3 +1,4 @@
+import { useState } from "react"
 import useFetchData from "../../hooks/useFetchData"
 
 interface ProductDetail {
@@ -8,10 +9,13 @@ interface ProductDetail {
     thumbnail: string
     description: string
 }
+interface ApiResponse {
+    products : ProductDetail[]
+}
 
 
 export default function ProductStore() {
-    const [data] = useFetchData('https://dummyjson.com/products')
+    const [data] = useFetchData<ApiResponse>('https://dummyjson.com/products')
 
     return (
         <>

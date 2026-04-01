@@ -28,7 +28,7 @@ export default function TodoApp() {
     return (
 
         <>
-            <div className="container">
+            <div className="container" style={{width: 500}}>
                 <h1>ToDo List</h1>
                 <input style={{ paddingLeft: 10 }} type="text" value={inputValue} placeholder="Enter everything"
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,8 +38,8 @@ export default function TodoApp() {
                 <ul style={{ padding: 0 }}>{todos.map((todo, index) => (
                     <li key={index}>{todo}
                         <div className="btn">
-                            <button onClick={() => updateTodos(todo,index)}>Update</button>
-                            <button onClick={() => deleteTodos(index)}>Delete</button>
+                            <button onClick={() => updateTodos(todo,index)} className="text-sm">Update</button>
+                            <button onClick={() => deleteTodos(index)} className="text-sm">Delete</button>
                         </div>
                     </li>
 
